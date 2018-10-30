@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1127774533614376}
+  m_IsPrefabAsset: 1
+--- !u!1 &1127774533614376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4232226038090142}
+  - component: {fileID: 114751620899388116}
+  - component: {fileID: 114304576654646478}
+  - component: {fileID: 114571431072155544}
+  - component: {fileID: 114864652131917480}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4232226038090142
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1127774533614376}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.058965206, y: -8, z: -2.6875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114304576654646478
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1127774533614376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68fe6664faa9f1149a87422ec085f7a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjClonar:
+  - {fileID: 1632198464936282, guid: f1b99c4eb33d35e4c9e037c13f9ab7ea, type: 2}
+  - {fileID: 1798047151088034, guid: a10c21aeb64ee3e4fb26854add31b69d, type: 2}
+  - {fileID: 1529879833434654, guid: 4d7b4b8a41ea52845aa879e2e21d8340, type: 2}
+  - {fileID: 1490986508554254, guid: 36dbfdf9b495b0447ae8be2202855eae, type: 2}
+  minValCreate: 0
+  maxValCreate: 2
+  canCreate: 1
+--- !u!114 &114571431072155544
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1127774533614376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1175b5a6a6e9184487ecafd0509cd72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  timeRecord: {fileID: 114864652131917480}
+  text: {fileID: 0}
+  textErrores: {fileID: 0}
+  errores: 0
+  erroresMax: 0
+--- !u!114 &114751620899388116
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1127774533614376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afa96fd9469eb8446adad6904be837b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target1: {fileID: 0}
+  target2: {fileID: 0}
+  current: {fileID: 0}
+  velocidad: 0.14
+  enPausa: 0
+--- !u!114 &114864652131917480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1127774533614376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 875f66b0273b2584f975372111bd9d7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 114571431072155544}
+  time: 5000000
+  MetaScore: 1000000
+  VictoryHud: {fileID: 0}
+  LoseHud: {fileID: 0}
+  NormalHud: {fileID: 0}
+  Playables: {fileID: 1127774533614376}
+  text: {fileID: 0}
